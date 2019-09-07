@@ -9,17 +9,17 @@
 <div class="row mb-4">
   <div class="col-md">
     <h1 class="h2 border-left pl-2">
-      Formulário de categorias
+      Formulário de categorias {{currentAction}}
     </h1>
   </div>
   <div class="col-md">
     <a routerLink="/categories" class="btn btn-light float-right">
-      Voltar
+      << Voltar
     </a>
   </div>
 </div>
 
-<form>
+<form [formGroup]="categoryForm">
 
   <div class="card">
     <div class="card-header">
